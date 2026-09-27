@@ -3,131 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The active work of Omari Bell — independent engineer and founder of Phoronomic Studios." />
-    <meta name="theme-color" content="#17170F" />
     <title>Omari Bell — Phoronomic Studios</title>
+    <meta name="description" content="Omari Bell is an independent engineer and the founder of Phoronomic Studios, a San Francisco software studio building accessible, human-centered tools." />
+    <meta name="theme-color" content="#17170F" />
+    <link rel="canonical" href="https://phoronomicstudios.com/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Phoronomic Studios" />
+    <meta property="og:title" content="Omari Bell — Phoronomic Studios" />
+    <meta property="og:description" content="Accessible, human-centered software from an independent studio in San Francisco." />
+    <meta property="og:url" content="https://phoronomicstudios.com/" />
+    <meta name="twitter:card" content="summary" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chivo:wght@400;500;600&family=Chivo+Mono:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" href="availability.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Omari Bell",
+        "jobTitle": "Founder & Engineer",
+        "worksFor": { "@type": "Organization", "name": "Phoronomic Studios", "url": "https://phoronomicstudios.com/" },
+        "email": "mailto:hello@phoronomicstudios.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA" },
+        "sameAs": ["https://github.com/marcompsci"]
+      }
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#work">Skip to projects</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Phoronomic Studios home">PHORONOMIC <span>STUDIOS</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#experience">Experience</a>
-        <a class="nav-contact" href="mailto:hello@phoronomicstudios.com">Get in touch ↗</a>
+      <a class="wordmark" href="#top">PHORONOMIC<span>STUDIOS</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a class="nav-contact" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero block dark" aria-labelledby="hero-title">
-        <div class="hero-label reveal">Independent software studio <span>·</span> San Francisco, CA</div>
-        <a class="availability reveal" href="mailto:hello@phoronomicstudios.com?subject=Project%20inquiry" aria-label="Open for work — email Omari Bell">
-          <span class="availability-dot" aria-hidden="true"></span> Open for work <b>↗</b>
-        </a>
+    <main id="main" tabindex="-1">
+      <!-- 01 / Hero -->
+      <section class="hero block dark" id="top" aria-labelledby="hero-title">
+        <div class="hero-top">
+          <p class="hero-label label reveal">Independent software studio <span aria-hidden="true">·</span> San Francisco, CA</p>
+          <a class="btn btn-ghost availability reveal" href="mailto:hello@phoronomicstudios.com?subject=Project%20inquiry">
+            <span class="availability-dot" aria-hidden="true"></span>Open for work<span class="visually-hidden"> — email Omari</span>
+          </a>
+        </div>
+
         <div class="hero-copy">
-          <p class="eyebrow reveal">01 / ABOUT THE STUDIO</p>
-          <h1 id="hero-title" class="reveal">Tools for the<br /><em>way people move.</em></h1>
-          <div class="hero-bottom reveal">
+          <p class="eyebrow reveal reveal-2">01 / About the studio</p>
+          <h1 id="hero-title" class="reveal reveal-2">Tools for the<br /><em>way people move.</em></h1>
+          <div class="hero-bottom reveal reveal-3">
             <p>I’m Omari Bell, a self-taught engineer and founder building accessible, human-centered tools for the people technology often designs around.</p>
-            <a class="round-link" href="#work" aria-label="Explore selected work"><span>Explore<br />work</span><b>↓</b></a>
+            <a class="btn hero-cta" href="#work">Explore work <span aria-hidden="true">↓</span></a>
           </div>
         </div>
+
         <div class="orbit" aria-hidden="true"><i></i><i></i><i></i><span>PS<br />26</span></div>
       </section>
 
-      <section class="principles block" id="about" aria-labelledby="principles-title">
-        <p class="eyebrow">02 / WHAT I’M WORKING TOWARDS</p>
-        <h2 id="principles-title">Software that meets people<br />where they actually are.</h2>
-        <div class="principle-grid">
-          <p>I’m a former Geek Squad Home Service Agent and Apple Product Specialist. I moved from Fresno to San Francisco to pursue a life in tech, build my own work, and create a better future for myself.</p>
-          <p>At Phoronomic Studios, I build tools that help people see and act on their own motion — their habits, goals, learning, health, and daily life. I’m especially interested in AI systems that remain legible and accountable.</p>
-          <p>Accessibility isn’t a later release. Voice-first interaction, keyboard support, reduced motion, clear feedback, and privacy are build constraints from the start.</p>
-        </div>
-      </section>
-
-      <section class="work block tint" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">03 / SELECTED WORK</p><h2 id="work-title">In active motion.</h2></div>
-          <p class="work-intro">Applications, extensions, and experiments currently being built at Phoronomic Studios.</p>
-        </div>
-
-        <div class="project-list">
-          <a class="project project-featured" href="https://github.com/marcompsci/Omari-s-Digital-Libary" target="_blank" rel="noreferrer">
-            <div class="project-index">01</div><div class="project-art library-art"><span>✦</span><b>THE<br />LIBRARY</b><i>explore / learn / return</i></div>
-            <div class="project-meta"><div><h3>Omari’s Digital Library <sup>↗</sup></h3><p>More than a bookshelf: an editorial, interactive personal library made to reward curiosity. Search by genre, open books for notes and context, save reader recommendations locally, and meet the animated frog and Meganeura guardian that live in the stacks.</p></div><span>WEB EXPERIENCE</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/SkateCity" target="_blank" rel="noreferrer">
-            <div class="project-index">02</div><div class="project-art skate-art"><span>SKATE<br />CITY</span><i>◒</i></div>
-            <div class="project-meta"><div><h3>SkateCity <sup>↗</sup></h3><p>An arcade street-skating game for iPhone and iPad. The plaza, skaters, textures, and character gear are generated in Swift at runtime—then brought to life with sessions, free skate, trick combos, grinds, goals, and a full create-a-skater flow.</p></div><span>SWIFT · SCENEKIT</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/StreetSesh" target="_blank" rel="noreferrer">
-            <div class="project-index">03</div><div class="project-art street-art"><span>STREET<br /><b>SESH</b></span><i>↗</i></div>
-            <div class="project-meta"><div><h3>StreetSesh <sup>↗</sup></h3><p>A native iOS skate-spot app built around the energy of an actual session. Find spots, start live sessions, hunt for new terrain, join crews, earn trophies, and let the community vote on the places that are getting shut down.</p></div><span>SWIFTUI · MAPKIT</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/Echo" target="_blank" rel="noreferrer">
-            <div class="project-index">04</div><div class="project-art echo-art"><span>ECHO</span><i>◉</i><b>listen<br />closely</b></div>
-            <div class="project-meta"><div><h3>Echo <sup>↗</sup></h3><p>A voice-driven accessibility inspector that turns Safari into a more understandable place. Select any element to capture its HTML, CSS, XPath, and attributes; then ask Echo to analyze, explain, or suggest a fix—entirely on device.</p></div><span>SAFARI EXTENSION</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/Veya" target="_blank" rel="noreferrer">
-            <div class="project-index">05</div><div class="project-art veya-art"><span>V</span><i>Seeing<br />the next<br />step.</i></div>
-            <div class="project-meta"><div><h3>Veya <sup>↗</sup></h3><p>“See it clearly. Know what to do.” Veya turns a screenshot you choose to share and a spoken or typed question into a visual guide with numbered callouts and practical next steps—without background monitoring or photo-library access.</p></div><span>IOS · ACCESSIBILITY</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/SkyBrief" target="_blank" rel="noreferrer">
-            <div class="project-index">06</div><div class="project-art sky-art"><span>SKY<br />BRIEF</span><i>✈</i></div>
-            <div class="project-meta"><div><h3>SkyBrief <sup>↗</sup></h3><p>A focused iOS project in active development, exploring a clearer, calmer way to understand the world overhead. Built for the moments when you look up and want the sky to make sense.</p></div><span>IOS APP</span></div>
-          </a>
-          <a class="project" href="https://github.com/marcompsci/StackSprint" target="_blank" rel="noreferrer">
-            <div class="project-index">07</div><div class="project-art stack-art"><span>STACK<br /><b>SPRINT</b></span><i>60<br />MISSIONS</i></div>
-            <div class="project-meta"><div><h3>StackSprint <sup>↗</sup></h3><p>A local-first learning studio for people ready to build, not just watch tutorials. It pairs web, Python, cybersecurity, and AI-prompting lessons with 60 guided code and design missions—then runs learner work inside a sandboxed, disposable environment.</p></div><span>LEARNING PLATFORM</span></div>
-          </a>
-        </div>
-      </section>
-
-      <section class="capabilities block" id="capabilities" aria-labelledby="capabilities-title">
-        <div class="section-head shell">
-          <p class="eyebrow">04 / CAPABILITIES</p>
-          <h2 id="capabilities-title">How I<br /><em>build.</em></h2>
-          <p class="section-lede">I build the product, the systems beneath it, and the accessible experience that makes it usable.</p>
-        </div>
-        <div class="capability-grid shell">
-          <article><span>01</span><h3>Product engineering</h3><ul><li>TypeScript &amp; JavaScript</li><li>React, Next.js &amp; Vite</li><li>Swift, SwiftUI &amp; SwiftData</li><li>HTML, CSS &amp; design systems</li></ul></article>
-          <article><span>02</span><h3>AI &amp; agent systems</h3><ul><li>Claude API &amp; Codex SDKs</li><li>Model Context Protocol</li><li>Human approval flows</li><li>Prompt &amp; evaluation design</li></ul></article>
-          <article><span>03</span><h3>Backend &amp; data</h3><ul><li>Node.js, Express &amp; SQL</li><li>PostgreSQL, SQLite &amp; pgvector</li><li>OpenAPI, Zod &amp; Drizzle</li><li>Authentication &amp; audit logging</li></ul></article>
-          <article><span>04</span><h3>Accessibility by default</h3><ul><li>Voice-first interaction</li><li>Screen-aware experiences</li><li>Keyboard &amp; reduced-motion support</li><li>Privacy-conscious product design</li></ul></article>
-        </div>
-      </section>
-
-      <section class="experience block dark" id="experience" aria-labelledby="experience-title">
+      <!-- 02 / About -->
+      <section class="about block section" id="about" aria-labelledby="about-title">
         <div class="shell">
-          <p class="eyebrow">05 / EXPERIENCE</p>
-          <h2 id="experience-title">Where I’ve<br /><em>learned.</em></h2>
-          <div class="timeline">
-            <article><p>2024 — 2026</p><div><h3>Geek Squad Home Service Agent</h3><span>Best Buy · San Francisco</span></div><p>Diagnosed hardware, software, and network problems in people’s homes—and taught clients, including people with vision and mobility limitations, how to stay independent with their systems.</p></article>
-            <article><p>2020 — 2021</p><div><h3>Product Specialist</h3><span>Apple · Fresno</span></div><p>Translated product capabilities into practical next steps for first-time and non-technical users while resolving iOS, macOS, and network issues.</p></article>
-            <article><p>2016 — 2020</p><div><h3>Front-End Supervisor</h3><span>Ross Dress for Less · Fresno</span></div><p>Led front-line service, trained associates, and adapted staffing in real time during high-volume store operations.</p></article>
+          <p class="eyebrow">02 / What I’m working towards</p>
+          <h2 id="about-title">Software that meets people<br />where they <em>actually are.</em></h2>
+          <div class="principle-grid">
+            <p><span class="label">Origin</span>I’m a former Geek Squad Home Service Agent and Apple Product Specialist. I moved from Fresno to San Francisco to pursue a life in tech, build my own work, and create a better future for myself.</p>
+            <p><span class="label">Focus</span>At Phoronomic Studios, I build tools that help people see and act on their own motion — their habits, goals, learning, health, and daily life. I’m especially interested in AI systems that remain legible and accountable.</p>
+            <p><span class="label">Constraint</span>Accessibility isn’t a later release. Voice-first interaction, keyboard support, reduced motion, clear feedback, and privacy are build constraints from the start.</p>
           </div>
         </div>
       </section>
 
-      <section class="open-source block tint" aria-labelledby="open-source-title">
-        <div class="shell open-source-inner"><div><p class="eyebrow">06 / OPEN SOURCE</p><h2 id="open-source-title">The work<br />in public.</h2></div><div><p>Selected repositories, experiments, and works in progress are available on GitHub.</p><a class="cta" href="https://github.com/marcompsci" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></div>
+      <!-- 03 / Work -->
+      <section class="work block tint section" id="work" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Selected work</p>
+              <h2 id="work-title">In active <em>motion.</em></h2>
+            </div>
+            <p>Applications, extensions, and experiments currently being built at Phoronomic Studios. Each links to its repository on GitHub.</p>
+          </div>
+
+          <ul class="project-list">
+            <li class="project project-featured">
+              <span class="project-index" aria-hidden="true">01</span>
+              <div class="project-art library-art" aria-hidden="true"><span>✦</span><b>THE<br />LIBRARY</b><i>explore / learn / return</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/Omari-s-Digital-Libary">Omari’s Digital Library<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>More than a bookshelf: an editorial, interactive personal library made to reward curiosity. Search by genre, open books for notes and context, save reader recommendations locally, and meet the animated frog and Meganeura guardian that live in the stacks.</p>
+                </div>
+                <span class="label">Web experience</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">02</span>
+              <div class="project-art skate-art" aria-hidden="true"><span>SKATE<br />CITY</span><i>◒</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/SkateCity">SkateCity<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>An arcade street-skating game for iPhone and iPad. The plaza, skaters, textures, and character gear are generated in Swift at runtime — then brought to life with sessions, free skate, trick combos, grinds, goals, and a full create-a-skater flow.</p>
+                </div>
+                <span class="label">Swift · SceneKit</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">03</span>
+              <div class="project-art street-art" aria-hidden="true"><span>STREET<br /><b>Sesh</b></span><i>↗</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/StreetSesh">StreetSesh<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>A native iOS skate-spot app built around the energy of an actual session. Find spots, start live sessions, hunt for new terrain, join crews, earn trophies, and let the community vote on the places that are getting shut down.</p>
+                </div>
+                <span class="label">SwiftUI · MapKit</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">04</span>
+              <div class="project-art echo-art" aria-hidden="true"><span>Echo</span><b>listen<br />closely</b></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/Echo">Echo<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>A voice-driven accessibility inspector that turns Safari into a more understandable place. Select any element to capture its HTML, CSS, XPath, and attributes; then ask Echo to analyze, explain, or suggest a fix — entirely on device.</p>
+                </div>
+                <span class="label">Safari extension</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">05</span>
+              <div class="project-art veya-art" aria-hidden="true"><span>V</span><i>Seeing<br />the next<br />step.</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/Veya">Veya<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>“See it clearly. Know what to do.” Veya turns a screenshot you choose to share and a spoken or typed question into a visual guide with numbered callouts and practical next steps — without background monitoring or photo-library access.</p>
+                </div>
+                <span class="label">iOS · Accessibility</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">06</span>
+              <div class="project-art sky-art" aria-hidden="true"><span>SKY<br />BRIEF</span><i>✈</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/SkyBrief">SkyBrief<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>A focused iOS project in active development, exploring a clearer, calmer way to understand the world overhead. Built for the moments when you look up and want the sky to make sense.</p>
+                </div>
+                <span class="label">iOS app</span>
+              </div>
+            </li>
+
+            <li class="project">
+              <span class="project-index" aria-hidden="true">07</span>
+              <div class="project-art stack-art" aria-hidden="true"><span>STACK<br /><b>SPRINT</b></span><i>60<br />MISSIONS</i></div>
+              <div class="project-meta">
+                <div>
+                  <h3><a class="project-link" href="https://github.com/marcompsci/StackSprint">StackSprint<span class="arrow" aria-hidden="true">↗</span><span class="visually-hidden"> on GitHub</span></a></h3>
+                  <p>A local-first learning studio for people ready to build, not just watch tutorials. It pairs web, Python, cybersecurity, and AI-prompting lessons with 60 guided code and design missions — then runs learner work inside a sandboxed, disposable environment.</p>
+                </div>
+                <span class="label">Learning platform</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="closing block hot">
-        <p class="eyebrow">07 / LET’S MAKE SOMETHING USEFUL</p>
-        <h2>Have a thoughtful problem?<br /><em>Let’s talk.</em></h2>
-        <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@phoronomicstudios.com <span>↗</span></a>
+      <!-- 04 / Capabilities -->
+      <section class="capabilities block section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / Capabilities</p>
+              <h2 id="capabilities-title">How I<br /><em>build.</em></h2>
+            </div>
+            <p>I build the product, the systems beneath it, and the accessible experience that makes it usable.</p>
+          </div>
+          <div class="capability-grid">
+            <article aria-labelledby="cap-1"><span class="label">01</span><h3 id="cap-1">Product engineering</h3><ul><li>TypeScript &amp; JavaScript</li><li>React, Next.js &amp; Vite</li><li>Swift, SwiftUI &amp; SwiftData</li><li>HTML, CSS &amp; design systems</li></ul></article>
+            <article aria-labelledby="cap-2"><span class="label">02</span><h3 id="cap-2">AI &amp; agent systems</h3><ul><li>Claude API &amp; Codex SDKs</li><li>Model Context Protocol</li><li>Human approval flows</li><li>Prompt &amp; evaluation design</li></ul></article>
+            <article aria-labelledby="cap-3"><span class="label">03</span><h3 id="cap-3">Backend &amp; data</h3><ul><li>Node.js, Express &amp; SQL</li><li>PostgreSQL, SQLite &amp; pgvector</li><li>OpenAPI, Zod &amp; Drizzle</li><li>Authentication &amp; audit logging</li></ul></article>
+            <article aria-labelledby="cap-4"><span class="label">04</span><h3 id="cap-4">Accessibility by default</h3><ul><li>Voice-first interaction</li><li>Screen-aware experiences</li><li>Keyboard &amp; reduced-motion support</li><li>Privacy-conscious product design</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 / Experience -->
+      <section class="experience block dark section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <p class="eyebrow">05 / Experience</p>
+          <h2 id="experience-title">Where I’ve<br /><em>learned.</em></h2>
+          <ol class="timeline" reversed>
+            <li>
+              <p class="label">2024 — 2026</p>
+              <div><h3>Geek Squad Home Service Agent</h3><span class="label">Best Buy · San Francisco</span></div>
+              <p>Diagnosed hardware, software, and network problems in people’s homes — and taught clients, including people with vision and mobility limitations, how to stay independent with their systems.</p>
+            </li>
+            <li>
+              <p class="label">2020 — 2021</p>
+              <div><h3>Product Specialist</h3><span class="label">Apple · Fresno</span></div>
+              <p>Translated product capabilities into practical next steps for first-time and non-technical users while resolving iOS, macOS, and network issues.</p>
+            </li>
+            <li>
+              <p class="label">2016 — 2020</p>
+              <div><h3>Front-End Supervisor</h3><span class="label">Ross Dress for Less · Fresno</span></div>
+              <p>Led front-line service, trained associates, and adapted staffing in real time during high-volume store operations.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 06 / Open source -->
+      <section class="open-source block tint section" aria-labelledby="open-source-title">
+        <div class="shell open-source-inner">
+          <div>
+            <p class="eyebrow">06 / Open source</p>
+            <h2 id="open-source-title">The work<br /><em>in public.</em></h2>
+          </div>
+          <div>
+            <p>Selected repositories, experiments, and works in progress are available on GitHub.</p>
+            <a class="btn" href="https://github.com/marcompsci">Explore GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 / Contact -->
+      <section class="contact block void section" id="contact" aria-labelledby="contact-title">
+        <div class="shell">
+          <p class="eyebrow">07 / Let’s make something useful</p>
+          <h2 id="contact-title">Have a thoughtful problem?<br /><em>Let’s talk.</em></h2>
+          <p class="prose">Have a product, a tool, or an accessibility problem in mind? Email is the fastest way to reach me.</p>
+          <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@<wbr />phoronomicstudios.com <span aria-hidden="true">↗</span></a>
+          <ul class="contact-links label">
+            <li><a href="https://github.com/marcompsci">GitHub — @marcompsci</a></li>
+            <li><a href="#top">Back to top <span aria-hidden="true">↑</span></a></li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer><span>© 2026 PHORONOMIC STUDIOS</span><span>DESIGNED & BUILT BY OMARI BELL</span><a href="https://github.com/marcompsci" target="_blank" rel="noreferrer">GITHUB ↗</a></footer>
-    <script src="script.js"></script>
+
+    <footer class="label">
+      <p>© 2026 Phoronomic Studios</p>
+      <p>Designed &amp; built by Omari Bell</p>
+    </footer>
   </body>
 </html>

@@ -36,52 +36,92 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" id="progress" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="wordmark" href="#top">PHORONOMIC<span>STUDIOS</span></a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a class="nav-contact" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="inner">
+        <a class="wordmark" href="#top"><span class="dot" aria-hidden="true"></span>Omari Bell <small>Phoronomic Studios</small></a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="main" tabindex="-1">
       <!-- 01 / Hero -->
-      <section class="hero block dark" id="top" aria-labelledby="hero-title">
-        <div class="hero-top">
-          <p class="hero-label label reveal">Independent software studio <span aria-hidden="true">·</span> San Francisco, CA</p>
-          <a class="btn btn-ghost availability reveal" href="mailto:hello@phoronomicstudios.com?subject=Project%20inquiry">
-            <span class="availability-dot" aria-hidden="true"></span>Open for work<span class="visually-hidden"> — email Omari</span>
-          </a>
-        </div>
-
-        <div class="hero-copy">
-          <p class="eyebrow reveal reveal-2">01 / About the studio</p>
-          <h1 id="hero-title" class="reveal reveal-2">Tools for the<br /><em>way people move.</em></h1>
-          <div class="hero-bottom reveal reveal-3">
-            <p>I’m Omari Bell, a self-taught engineer and founder building accessible, human-centered tools for the people technology often designs around.</p>
-            <a class="btn hero-cta" href="#work">Explore work <span aria-hidden="true">↓</span></a>
+      <section class="hero block" id="top" aria-labelledby="hero-title">
+        <div class="shell">
+          <p class="eyebrow reveal">Phoronomic Studios · San Francisco</p>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1 id="hero-title" class="reveal reveal-2">Tools for the<br /><em>way people move.</em></h1>
+              <p class="lede reveal reveal-2">I’m Omari Bell, a self-taught engineer and founder building accessible, human-centered tools for the people technology often designs around.</p>
+              <p class="reveal reveal-3">Twenty-seven years in Fresno, then one move north. Everything since has been Phoronomic Studios.</p>
+              <div class="btnrow reveal reveal-3">
+                <a class="btn" href="#work">See the work <span aria-hidden="true">↓</span></a>
+                <a class="btn btn-ghost" href="mailto:hello@phoronomicstudios.com?subject=Project%20inquiry"><span class="avail-dot" aria-hidden="true"></span>Open for work</a>
+              </div>
+            </div>
+            <div class="shot reveal reveal-3" aria-hidden="true">
+              <div class="tilt"></div>
+              <div class="plate">
+                <div class="orbit"><i></i><i></i><i></i></div>
+                <p class="label"><b>●</b> Independent software studio</p>
+                <p class="plate-mark">PS/26<em>in motion.</em></p>
+                <p class="label">Web · iOS · Safari · AI tooling</p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="orbit" aria-hidden="true"><i></i><i></i><i></i><span>PS<br />26</span></div>
+      <!-- At a glance -->
+      <section class="block dark" aria-label="At a glance">
+        <ul class="stats shell">
+          <li><b>07</b><span class="label">Projects in motion</span></li>
+          <li><b>03</b><span class="label">Platforms: web, iOS, Safari</span></li>
+          <li><b>05</b><span class="label">Languages spoken</span></li>
+          <li><b>06</b><span class="label">Years making content</span></li>
+        </ul>
       </section>
 
       <!-- 02 / About -->
       <section class="about block section" id="about" aria-labelledby="about-title">
         <div class="shell">
           <p class="eyebrow">02 / What I’m working towards</p>
-          <h2 id="about-title">Software that meets people<br />where they <em>actually are.</em></h2>
-          <div class="principle-grid">
-            <p><span class="label">Origin</span>I’m a former Geek Squad Home Service Agent and Apple Product Specialist. I moved from Fresno to San Francisco to pursue a life in tech, build my own work, and create a better future for myself.</p>
-            <p><span class="label">Focus</span>At Phoronomic Studios, I build tools that help people see and act on their own motion — their habits, goals, learning, health, and daily life. I’m especially interested in AI systems that remain legible and accountable.</p>
-            <p><span class="label">Constraint</span>Accessibility isn’t a later release. Voice-first interaction, keyboard support, reduced motion, clear feedback, and privacy are build constraints from the start.</p>
+          <h2 id="about-title" class="big">Software that meets people where they <em>actually are.</em></h2>
+          <div class="split">
+            <div class="copy">
+              <p class="lede">I build tools that help people see and act on their own motion — their habits, goals, learning, health, and daily life.</p>
+              <h3 class="sec">The field</h3>
+              <p>I’m a former Geek Squad Home Service Agent and Apple Product Specialist. I moved from Fresno to San Francisco to pursue a life in tech, build my own work, and create a better future for myself.</p>
+              <h3 class="sec">The focus</h3>
+              <p>At Phoronomic Studios, I’m especially interested in AI systems that remain legible and accountable — software that explains itself instead of asking for blind trust.</p>
+              <h3 class="sec">The constraint</h3>
+              <p>Accessibility isn’t a later release. Voice-first interaction, keyboard support, reduced motion, clear feedback, and privacy are build constraints from the start.</p>
+            </div>
+            <dl class="rail">
+              <div><dt class="label">Hometown</dt><dd><b>Fresno, CA</b>Twenty-seven years</dd></div>
+              <div><dt class="label">Now</dt><dd><b>San Francisco</b>Where the studio runs</dd></div>
+              <div><dt class="label">Before this</dt><dd><b>Geek Squad &amp; Apple</b>Home service and product specialist work</dd></div>
+              <div><dt class="label">Reach me</dt><dd><a href="mailto:hello@phoronomicstudios.com">hello@phoronomicstudios.com</a></dd></div>
+            </dl>
           </div>
+        </div>
+      </section>
+
+      <!-- Creed -->
+      <section class="creed block dark" aria-label="Studio principle">
+        <div class="shell">
+          <p class="eyebrow label"><span lang="el">φορά</span> · a carrying — <span lang="el">νόμος</span> · the law</p>
+          <blockquote>The Greeks gave motion a <b>law</b> before they could explain it. You don’t have to see the whole road to be carried down it. You have to <b>start.</b></blockquote>
+          <cite class="label">Omari — Phoronomic Studios</cite>
         </div>
       </section>
 
@@ -91,7 +131,7 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">03 / Selected work</p>
-              <h2 id="work-title">In active <em>motion.</em></h2>
+              <h2 id="work-title" class="big">In active <em>motion.</em></h2>
             </div>
             <p>Applications, extensions, and experiments currently being built at Phoronomic Studios. Each links to its repository on GitHub.</p>
           </div>
@@ -190,7 +230,7 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">04 / Capabilities</p>
-              <h2 id="capabilities-title">How I<br /><em>build.</em></h2>
+              <h2 id="capabilities-title" class="big">How I <em>build.</em></h2>
             </div>
             <p>I build the product, the systems beneath it, and the accessible experience that makes it usable.</p>
           </div>
@@ -207,7 +247,7 @@
       <section class="experience block dark section" id="experience" aria-labelledby="experience-title">
         <div class="shell">
           <p class="eyebrow">05 / Experience</p>
-          <h2 id="experience-title">Where I’ve<br /><em>learned.</em></h2>
+          <h2 id="experience-title" class="big">Where I’ve <em>learned.</em></h2>
           <ol class="timeline" reversed>
             <li>
               <p class="label">2024 — 2026</p>
@@ -229,11 +269,11 @@
       </section>
 
       <!-- 06 / Open source -->
-      <section class="open-source block tint section" aria-labelledby="open-source-title">
+      <section class="open-source block blue section" aria-labelledby="open-source-title">
         <div class="shell open-source-inner">
           <div>
             <p class="eyebrow">06 / Open source</p>
-            <h2 id="open-source-title">The work<br /><em>in public.</em></h2>
+            <h2 id="open-source-title" class="big">The work <em>in public.</em></h2>
           </div>
           <div>
             <p>Selected repositories, experiments, and works in progress are available on GitHub.</p>
@@ -243,23 +283,40 @@
       </section>
 
       <!-- 07 / Contact -->
-      <section class="contact block void section" id="contact" aria-labelledby="contact-title">
+      <section class="contact block hot section air" id="contact" aria-labelledby="contact-title">
         <div class="shell">
           <p class="eyebrow">07 / Let’s make something useful</p>
-          <h2 id="contact-title">Have a thoughtful problem?<br /><em>Let’s talk.</em></h2>
-          <p class="prose">Have a product, a tool, or an accessibility problem in mind? Email is the fastest way to reach me.</p>
-          <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@<wbr />phoronomicstudios.com <span aria-hidden="true">↗</span></a>
-          <ul class="contact-links label">
-            <li><a href="https://github.com/marcompsci">GitHub — @marcompsci</a></li>
-            <li><a href="#top">Back to top <span aria-hidden="true">↑</span></a></li>
-          </ul>
+          <h2 id="contact-title" class="big">Let’s put it <em>in motion.</em></h2>
+          <div class="split even">
+            <div>
+              <p class="lede">Have a product, a tool, or an accessibility problem in mind? Email is the fastest way to reach me.</p>
+              <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@<wbr />phoronomicstudios.com <span aria-hidden="true">↗</span></a>
+            </div>
+            <dl class="rail">
+              <div><dt class="label">Email</dt><dd><a href="mailto:hello@phoronomicstudios.com">hello@phoronomicstudios.com</a></dd></div>
+              <div><dt class="label">Code</dt><dd><a href="https://github.com/marcompsci">github.com/marcompsci</a></dd></div>
+              <div><dt class="label">Studio</dt><dd>Phoronomic Studios<br />San Francisco, CA</dd></div>
+            </dl>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="label">
-      <p>© 2026 Phoronomic Studios</p>
-      <p>Designed &amp; built by Omari Bell</p>
+    <footer>
+      <div class="shell">
+        <p class="mega" aria-hidden="true">Phoronomic<br /><em>Studios</em></p>
+        <ul class="foot-links label">
+          <li><a href="https://github.com/marcompsci">GitHub — @marcompsci</a></li>
+          <li><a href="mailto:hello@phoronomicstudios.com">Email the studio</a></li>
+          <li><a href="#top">Back to top <span aria-hidden="true">↑</span></a></li>
+        </ul>
+        <div class="foot-row label">
+          <p>© 2026 Phoronomic Studios · San Francisco</p>
+          <p>Designed &amp; built by Omari Bell</p>
+        </div>
+      </div>
     </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

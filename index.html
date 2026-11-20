@@ -43,10 +43,10 @@
         <a class="wordmark" href="#top"><span class="dot" aria-hidden="true"></span>Omari Bell <small>Phoronomic Studios</small></a>
         <nav class="site-nav" aria-label="Primary">
           <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#work">Work</a></li>
-            <li><a href="#capabilities">Capabilities</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -54,7 +54,7 @@
     </header>
 
     <main id="main" tabindex="-1">
-      <!-- 01 / Hero -->
+      <!-- Hero -->
       <section class="hero block" id="top" aria-labelledby="hero-title">
         <div class="shell">
           <p class="eyebrow reveal">Phoronomic Studios · San Francisco</p>
@@ -64,14 +64,14 @@
               <p class="lede reveal reveal-2">I’m Omari Bell, a self-taught engineer and founder building accessible, human-centered tools for the people technology often designs around.</p>
               <p class="reveal reveal-3">Twenty-seven years in Fresno, then one move north. Everything since has been Phoronomic Studios.</p>
               <div class="btnrow reveal reveal-3">
-                <a class="btn" href="#work">See the work <span aria-hidden="true">↓</span></a>
-                <a class="btn btn-ghost" href="mailto:hello@phoronomicstudios.com?subject=Project%20inquiry"><span class="avail-dot" aria-hidden="true"></span>Open for work</a>
+                <a class="btn" href="#services">What do you need? <span aria-hidden="true">↓</span></a>
+                <a class="btn btn-ghost" href="#work"><span class="avail-dot" aria-hidden="true"></span>See the work</a>
               </div>
             </div>
-            <div class="shot reveal reveal-3" aria-hidden="true">
+            <div class="shot reveal reveal-3" id="toy" aria-hidden="true">
               <div class="tilt"></div>
               <div class="plate">
-                <div class="orbit"><i></i><i></i><i></i></div>
+                <div class="orbit"><i><b></b></i><i><b></b></i><i><b></b></i></div>
                 <p class="label"><b>●</b> Independent software studio</p>
                 <p class="plate-mark">PS/26<em>in motion.</em></p>
                 <p class="label">Web · iOS · Safari · AI tooling</p>
@@ -79,6 +79,15 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Marquee -->
+      <section class="marquee block hot" aria-label="Services at a glance">
+        <div class="marquee-track" id="marqueeTrack">
+          <p class="marquee-row"><span>Websites &amp; apps</span><i aria-hidden="true">✦</i><span>AI workshops</span><i aria-hidden="true">✦</i><span>In-home tech</span><i aria-hidden="true">✦</i><span>Coaching</span><i aria-hidden="true">✦</i><span>Content creation</span><i aria-hidden="true">✦</i><span>Strategy calls</span><i aria-hidden="true">✦</i></p>
+          <p class="marquee-row" aria-hidden="true"><span>Websites &amp; apps</span><i>✦</i><span>AI workshops</span><i>✦</i><span>In-home tech</span><i>✦</i><span>Coaching</span><i>✦</i><span>Content creation</span><i>✦</i><span>Strategy calls</span><i>✦</i></p>
+        </div>
+        <button class="marquee-toggle" type="button" id="marqueeToggle" aria-pressed="false">Pause<span class="visually-hidden"> scrolling ticker</span></button>
       </section>
 
       <!-- At a glance -->
@@ -91,10 +100,154 @@
         </ul>
       </section>
 
-      <!-- 02 / About -->
+      <!-- Services + picker -->
+      <section class="services block section" id="services" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Services</p>
+              <h2 id="services-title" class="big">Five lines <em>of work.</em></h2>
+            </div>
+            <p>Every one of these is me rather than a dispatch queue. The person who picks up is the person who shows up.</p>
+          </div>
+
+          <div class="picker" role="group" aria-labelledby="picker-label">
+            <p class="label" id="picker-label">What do you need moving?</p>
+            <div class="picker-chips">
+              <button type="button" class="chip" data-pick="web" aria-pressed="false">A website or app</button>
+              <button type="button" class="chip" data-pick="ai" aria-pressed="false">AI training for my team</button>
+              <button type="button" class="chip" data-pick="tech" aria-pressed="false">Tech fixed at home</button>
+              <button type="button" class="chip" data-pick="coach" aria-pressed="false">A coach</button>
+              <button type="button" class="chip" data-pick="content" aria-pressed="false">Content made</button>
+              <button type="button" class="chip" data-pick="call" aria-pressed="false">Just advice</button>
+            </div>
+            <p class="picker-answer" id="pickerAnswer" aria-live="polite">Pick one and I’ll point you to the right place.</p>
+          </div>
+
+          <ul class="svc-grid">
+            <li class="svc" id="svc-web" data-svc="web">
+              <span class="svc-num" aria-hidden="true">01</span>
+              <h3>Websites &amp; apps</h3>
+              <p class="svc-price"><small class="label">From</small>$1,000</p>
+              <p>A real site, designed and shipped. Not a template with your logo dropped in. Where you land between $1,000 and $5,000 depends on how much of it you want to run yourself.</p>
+              <ul class="ticks">
+                <li>Design and build, mobile-first</li>
+                <li>Care plan: $200/mo for 4 months, then $150/mo</li>
+                <li>Apps: iOS, web, and AI tooling — quoted per project</li>
+              </ul>
+              <a class="svc-cta" href="#contact" data-topic="A website or app">Ask about a build <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="svc" id="svc-ai" data-svc="ai">
+              <span class="svc-num" aria-hidden="true">02</span>
+              <h3>AI workshops</h3>
+              <p class="svc-price"><small class="label">From</small>$250</p>
+              <p>Hands-on AI training for small businesses, teams, schools and educators. A working session that ends with workflows your people can run on Monday, and written rules for what data goes near which tool.</p>
+              <ul class="ticks">
+                <li>Educator day $250 · Online course $500</li>
+                <li>Small business on-site day $5,000</li>
+                <li>Middle school &amp; kids: free, sponsor-funded</li>
+              </ul>
+              <a class="svc-cta" href="#contact" data-topic="An AI workshop">Plan a workshop <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="svc" id="svc-tech" data-svc="tech">
+              <span class="svc-num" aria-hidden="true">03</span>
+              <h3>In-home tech</h3>
+              <p class="svc-price"><small class="label">TV mount from</small>$100</p>
+              <p>Two years inside Geek Squad, then out on my own to do it faster and for less. Mobile help across the Bay Area, 8am to 8pm. You describe the setup, I build it, then I teach you to run it.</p>
+              <div class="h2h" aria-label="TV mounting, 65 inches and under: Geek Squad $249.99, Omari $100">
+                <div class="h2h-row"><span class="label">Geek Squad</span><span class="h2h-bar gs" style="--w:100%"></span><b>$249.99</b></div>
+                <div class="h2h-row"><span class="label">Omari</span><span class="h2h-bar me" style="--w:40%"></span><b>$100</b></div>
+                <p class="label h2h-cap">TV mounting &amp; setup · 65″ and under</p>
+              </div>
+              <a class="svc-cta" href="#contact" data-topic="In-home tech help">Book a visit <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="svc" id="svc-coach" data-svc="coach">
+              <span class="svc-num" aria-hidden="true">04</span>
+              <h3>Coaching</h3>
+              <p class="svc-price"><small class="label">From</small>$225<small class="label">/mo</small></p>
+              <p>Fitness, skateboarding and soccer on one four-step ladder. Mix disciplines in one plan — strength for a parent and skate lessons for a kid is one tier and one calendar.</p>
+              <a class="svc-cta" href="#ladder">See the ladder <span aria-hidden="true">↓</span></a>
+            </li>
+            <li class="svc" id="svc-content" data-svc="content">
+              <span class="svc-num" aria-hidden="true">05</span>
+              <h3>Content creation</h3>
+              <p class="svc-price"><small class="label">Priced</small>Per project</p>
+              <p>Six years making things for the internet in three lanes I live in: skateboarding, fitness and AI. Short-form for Instagram, TikTok and Shorts; long-form when the story needs room.</p>
+              <ul class="ticks">
+                <li>Concept, shoot and edit, end to end</li>
+                <li>Creator strategy: lanes, cadence, what to post when</li>
+                <li>Brand and UGC work</li>
+              </ul>
+              <a class="svc-cta" href="#contact" data-topic="Content creation">Get a quote <span aria-hidden="true">→</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Coaching ladder -->
+      <section class="ladder-band block dark section" id="ladder" aria-labelledby="ladder-title">
+        <div class="shell">
+          <p class="eyebrow">Coaching / The ladder</p>
+          <h2 id="ladder-title" class="big">Four steps, named after <em>motion.</em></h2>
+          <p class="prose ladder-lede">Position, velocity, acceleration and jerk are the first four derivatives of motion: where you are, how fast you’re changing, how fast that is changing, and how fast that is. Each step is $250 above the one below.</p>
+          <ol class="ladder">
+            <li style="--step:0">
+              <span class="label">Beginner</span>
+              <h3>Position</h3>
+              <p class="ladder-what">Where you are</p>
+              <svg class="curve" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 30 H116"/></svg>
+              <p class="ladder-price">$225<small>/mo</small></p>
+            </li>
+            <li style="--step:1">
+              <span class="label">Intermediate</span>
+              <h3>Velocity</h3>
+              <p class="ladder-what">You’re moving</p>
+              <svg class="curve" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 56 L116 4"/></svg>
+              <p class="ladder-price">$475<small>/mo</small></p>
+            </li>
+            <li style="--step:2">
+              <span class="label">Professional</span>
+              <h3>Acceleration</h3>
+              <p class="ladder-what">You’re gaining</p>
+              <svg class="curve" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 56 Q80 56 116 4"/></svg>
+              <p class="ladder-price">$725<small>/mo</small></p>
+            </li>
+            <li style="--step:3">
+              <span class="label">Mastery</span>
+              <h3>Jerk</h3>
+              <p class="ladder-what">You change gears at will</p>
+              <svg class="curve" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 56 C70 56 60 6 116 4"/></svg>
+              <p class="ladder-price">$975<small>/mo</small></p>
+            </li>
+          </ol>
+          <div class="btnrow"><a class="btn" href="#contact" data-topic="Coaching">Start at your step <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <!-- Strategy calls -->
+      <section class="calls block tint section" id="calls" aria-labelledby="calls-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Strategy calls</p>
+              <h2 id="calls-title" class="big">Bring me <em>the problem.</em></h2>
+            </div>
+            <p>Sometimes you don’t need me on your field or in your living room. You need straight time with someone who has already built the thing you’re about to build.</p>
+          </div>
+          <ul class="tiers">
+            <li><span class="label">Tier 01</span><h3>One call</h3><p class="tier-price">$200<small>60 min</small></p><ul class="ticks"><li>One problem, worked end to end</li><li>Recording, so you don’t take notes</li><li>Written summary the same day</li></ul></li>
+            <li><span class="label">Tier 02</span><h3>Call &amp; plan</h3><p class="tier-price">$300<small>90 min</small></p><ul class="ticks"><li>Everything in Tier 01</li><li>Written action plan: steps, order, deadlines</li><li>One round of follow-up by email</li></ul></li>
+            <li><span class="label">Tier 03</span><h3>Monthly</h3><p class="tier-price">$600<small>per month</small></p><ul class="ticks"><li>Two 60-minute calls a month</li><li>Messages answered in between</li><li>Same numbers tracked month to month</li></ul></li>
+            <li class="tier-hot"><span class="label">Tier 04 · Most call time</span><h3>Four-week sprint</h3><p class="tier-price">$800<small>four weeks</small></p><ul class="ticks"><li>Four 60-minute calls, one a week</li><li>Messages answered throughout</li><li>We build one piece together</li></ul></li>
+          </ul>
+          <div class="btnrow"><a class="btn" href="#contact" data-topic="A strategy call">Book a call <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <!-- About -->
       <section class="about block section" id="about" aria-labelledby="about-title">
         <div class="shell">
-          <p class="eyebrow">02 / What I’m working towards</p>
+          <p class="eyebrow">03 / What I’m working towards</p>
           <h2 id="about-title" class="big">Software that meets people where they <em>actually are.</em></h2>
           <div class="split">
             <div class="copy">
@@ -125,12 +278,12 @@
         </div>
       </section>
 
-      <!-- 03 / Work -->
+      <!-- Work -->
       <section class="work block tint section" id="work" aria-labelledby="work-title">
         <div class="shell">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">03 / Selected work</p>
+              <p class="eyebrow">04 / Selected work</p>
               <h2 id="work-title" class="big">In active <em>motion.</em></h2>
             </div>
             <p>Applications, extensions, and experiments currently being built at Phoronomic Studios. Each links to its repository on GitHub.</p>
@@ -224,12 +377,12 @@
         </div>
       </section>
 
-      <!-- 04 / Capabilities -->
+      <!-- Capabilities -->
       <section class="capabilities block section" id="capabilities" aria-labelledby="capabilities-title">
         <div class="shell">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">04 / Capabilities</p>
+              <p class="eyebrow">05 / Capabilities</p>
               <h2 id="capabilities-title" class="big">How I <em>build.</em></h2>
             </div>
             <p>I build the product, the systems beneath it, and the accessible experience that makes it usable.</p>
@@ -243,10 +396,10 @@
         </div>
       </section>
 
-      <!-- 05 / Experience -->
+      <!-- Experience -->
       <section class="experience block dark section" id="experience" aria-labelledby="experience-title">
         <div class="shell">
-          <p class="eyebrow">05 / Experience</p>
+          <p class="eyebrow">06 / Experience</p>
           <h2 id="experience-title" class="big">Where I’ve <em>learned.</em></h2>
           <ol class="timeline" reversed>
             <li>
@@ -268,11 +421,11 @@
         </div>
       </section>
 
-      <!-- 06 / Open source -->
+      <!-- Open source -->
       <section class="open-source block blue section" aria-labelledby="open-source-title">
         <div class="shell open-source-inner">
           <div>
-            <p class="eyebrow">06 / Open source</p>
+            <p class="eyebrow">07 / Open source</p>
             <h2 id="open-source-title" class="big">The work <em>in public.</em></h2>
           </div>
           <div>
@@ -282,24 +435,85 @@
         </div>
       </section>
 
-      <!-- 07 / Contact -->
+      <!-- FAQ -->
+      <section class="faq block section" id="faq" aria-labelledby="faq-title">
+        <div class="shell">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title" class="big">Things people <em>ask first.</em></h2>
+          <div class="faq-list">
+            <details>
+              <summary>What actually happens in an AI workshop?</summary>
+              <p>You fill in a short intake questionnaire first, so the day is built on your real work instead of a generic deck. Then it’s hands-on: live exercises on non-sensitive sample data, written security boundaries, and role-based templates you keep. Everyone leaves with an action plan and a scorecard we check again at thirty days.</p>
+            </details>
+            <details>
+              <summary>Are the coaching prices per session or per month?</summary>
+              <p>Per month. Each tier is a program: a set number of sessions, a written plan, and me on the other end of the phone in between.</p>
+            </details>
+            <details>
+              <summary>Do you come to me, or do I come to you?</summary>
+              <p>I come to you. Coaching happens at your park, field or gym anywhere across the Bay Area. Tech work is in your home. Web and content work can be fully remote.</p>
+            </details>
+            <details>
+              <summary>What size TV can you mount?</summary>
+              <p>65 inches and under, for now. Above that I’d need a second pair of hands, and I’d rather tell you that up front than drop your television.</p>
+            </details>
+            <details>
+              <summary>Why is there no price on content creation?</summary>
+              <p>Scope drives that number more than anything else, so a figure on a page would be a guess dressed up as a quote. Tell me the deliverable and you’ll get a real number the same day.</p>
+            </details>
+            <details>
+              <summary>How fast do you answer?</summary>
+              <p>Same day, most days. There’s no queue and no dispatcher, so the person reading your message is the person who shows up.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
       <section class="contact block hot section air" id="contact" aria-labelledby="contact-title">
         <div class="shell">
-          <p class="eyebrow">07 / Let’s make something useful</p>
+          <p class="eyebrow">08 / Let’s make something useful</p>
           <h2 id="contact-title" class="big">Let’s put it <em>in motion.</em></h2>
           <div class="split even">
             <div>
-              <p class="lede">Have a product, a tool, or an accessibility problem in mind? Email is the fastest way to reach me.</p>
-              <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@<wbr />phoronomicstudios.com <span aria-hidden="true">↗</span></a>
+              <p class="lede">Tell me what you’re trying to move: a business, a body, a living room that stopped cooperating, or a website that should have shipped last year.</p>
+              <form class="brief" id="brief" action="mailto:hello@phoronomicstudios.com" method="post" enctype="text/plain">
+                <div class="frow">
+                  <div class="field"><label class="label" for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required /></div>
+                  <div class="field">
+                    <label class="label" for="f-topic">What’s this about</label>
+                    <select id="f-topic" name="topic">
+                      <option>A website or app</option>
+                      <option>An AI workshop</option>
+                      <option>In-home tech help</option>
+                      <option>Coaching</option>
+                      <option>Content creation</option>
+                      <option>A strategy call</option>
+                      <option>Something else</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field"><label class="label" for="f-where">Where you are <span class="opt">(optional)</span></label><input id="f-where" name="where" type="text" autocomplete="address-level2" /></div>
+                <div class="field"><label class="label" for="f-msg">What you need</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
+                <button class="btn btn-ink" type="submit">Write the email <span aria-hidden="true">→</span></button>
+                <p class="form-note">This opens your email app with everything filled in, addressed to me. Nothing is stored on this page.</p>
+              </form>
+              <div class="mailrow">
+                <a class="email-link" href="mailto:hello@phoronomicstudios.com">hello@<wbr />phoronomicstudios.com <span aria-hidden="true">↗</span></a>
+                <button class="copy-btn" type="button" data-copy="hello@phoronomicstudios.com">Copy email</button>
+              </div>
             </div>
             <dl class="rail">
               <div><dt class="label">Email</dt><dd><a href="mailto:hello@phoronomicstudios.com">hello@phoronomicstudios.com</a></dd></div>
               <div><dt class="label">Code</dt><dd><a href="https://github.com/marcompsci">github.com/marcompsci</a></dd></div>
               <div><dt class="label">Studio</dt><dd>Phoronomic Studios<br />San Francisco, CA</dd></div>
+              <div><dt class="label">Coverage</dt><dd>On site across the Bay Area. Remote for web and content anywhere.</dd></div>
+              <div><dt class="label">Response</dt><dd>Same day, most days</dd></div>
             </dl>
           </div>
         </div>
       </section>
+      <a class="float-cta" id="floatCta" href="#contact">Get a quote <span aria-hidden="true">→</span></a>
     </main>
 
     <footer>
@@ -316,6 +530,8 @@
         </div>
       </div>
     </footer>
+
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
 
     <script src="script.js" defer></script>
   </body>
